@@ -325,8 +325,3 @@ results <- predict(model, newdata = X_test)
 predictions <- ifelse(results > 0.5, 1, 0)
 accuracy <- mean(predictions == X_test$wants_to_match)
 print(accuracy)
-
-
-
-
-
